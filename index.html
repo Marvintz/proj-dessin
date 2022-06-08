@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>projet</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+  
+    <!--crée une div pour le canvas -->
+    <div id="canvasDiv"></div>
+   
+    <div class="button-bars">
+      <button id="clear">CLEAR</button>
+      <button id="save">SAVE</button>
+    </div>
+    <div id="img-container">
+      <img id="savedImg" alt="savedpicture" src="" />
+    </div>
+
+    <!-- pour le pop up -->
+    <div onclick="closePopup()" id="outer-popup"></div>
+    <div id="onstart-popup">
+      <h2> Appli de dessin</h2>
+      <p>
+        Bienvenue dans l'application de dessin. Cliquez sur la toile 
+        pour dessiner, cliquez sur le bouton Effacer pour effacer 
+        la toile et cliquez sur le bouton Enregistrer pour enregistrer
+
+      </p>
+      <h4>selectionner une couleur</h4>
+      <section class="color-selector">
+            <div class="color" data-color="black"></div>
+            <div class="color" data-color="green"></div>
+            <div class="color" data-color="blue"></div>
+            <div class="color" data-color="purple"></div>
+            <div class="color" data-color="red"></div>
+      </section>
+      <div onclick="closePopup()">&times;</div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
